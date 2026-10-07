@@ -1,0 +1,30 @@
+{
+  "expo": {
+    "name": "GhostChat - Anonymous Chat & Dating App",
+    "slug": "ghostchat-anonymous-chat-dating",
+    "version": "1.0.0",
+    "description": "The ultimate anonymous chat and blind dating app. End-to-end encrypted messaging, zero-knowledge secret chat, and random stranger matchmaking.",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#0A0D14",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "name": "GhostChat - Anonymous Chat & Dating App",
+      "shortName": "GhostChat",
+      "themeColor": "#6366F1",
+      "backgroundColor": "#0A0D14",
+      "bundler": "metro"
+    }
+  }
+}

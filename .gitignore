@@ -1,0 +1,39 @@
+# Dependencies
+node_modules/
+frontend/node_modules/
+
+# Python
+__pycache__/
+backend/__pycache__/
+backend/*/__pycache__/
+*.py[cod]
+*$py.class
+env/
+venv/
+.venv/
+
+# Secrets & Environment files
+.env
+.env.local
+backend/.env
+!.env.example
+!backend/.env.example
+
+# Expo & Build files
+.expo/
+frontend/.expo/
+frontend/dist/
+web-build/
+*.tsbuildinfo
+
+# Uploads
+backend/uploads/*
+!backend/uploads/.gitkeep
+
+# OS & Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+.claude/
+frontend/.claude/

@@ -1,0 +1,13 @@
+# Robots.txt for GhostChat
+User-agent: *
+Allow: /
+
+# Directives for search engine bots
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Sitemap Location
+Sitemap: https://ghostchat.onrender.com/sitemap.xml

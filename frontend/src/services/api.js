@@ -3,9 +3,16 @@ const getApiBaseUrl = () => {
     return process.env.EXPO_PUBLIC_API_URL.replace(/\/+$/, '');
   }
   if (typeof window !== 'undefined' && window.location) {
-    const isLocalhost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
-    if (isLocalhost) {
-      return `http://${window.location.hostname}:8000`;
+    const host = window.location.hostname;
+    const isLocalOrLan =
+      host === 'localhost' ||
+      host === '127.0.0.1' ||
+      host.startsWith('192.168.') ||
+      host.startsWith('10.') ||
+      host.startsWith('172.');
+
+    if (isLocalOrLan) {
+      return `http://${host}:8000`;
     }
     return window.__API_URL__ || `${window.location.protocol}//${window.location.host}`;
   }

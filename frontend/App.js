@@ -14,6 +14,12 @@ import {
   Platform
 } from 'react-native';
 
+if (Platform.OS === 'web' && typeof window !== 'undefined') {
+  Alert.alert = (title, message) => {
+    window.alert(`${title ? title + '\n\n' : ''}${message || ''}`);
+  };
+}
+
 import {
   generateIdentityKeyPair,
   generateSignedPrekey,
@@ -368,6 +374,9 @@ export default function App() {
 
     // Execute Outbound X3DH Handshake
     const bundle = await fetchPrekeyBundle(peerId);
+    if (!bundle || !bundle.x25519_signed_prekey || bundle.x25519_signed_prekey.length < 64) {
+      throw new Error(`User "${peerUser.pseudonym || 'peer'}" does not have valid encryption keys in directory.`);
+    }
 
     const masterSecret = deriveSharedMasterSecret({
       aliceIdentityX25519Priv: identity.signedPrekey.privateKeyHex,

@@ -23,7 +23,9 @@ async def list_users(exclude_id: Optional[str] = Query(None)):
     if db is None:
         return []
 
-    query = {}
+    query = {
+        "x25519_signed_prekey": {"$exists": True, "$nin": ["", None]}
+    }
     if exclude_id:
         query["user_id"] = {"$ne": exclude_id}
 

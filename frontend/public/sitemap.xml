@@ -4,31 +4,31 @@
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   <url>
-    <loc>https://ghostchat.onrender.com/</loc>
+    <loc>https://ghostchat-frontend-117d.onrender.com/</loc>
     <lastmod>2026-10-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.00</priority>
   </url>
   <url>
-    <loc>https://ghostchat.onrender.com/#blind-dating</loc>
+    <loc>https://ghostchat-frontend-117d.onrender.com/#blind-dating</loc>
     <lastmod>2026-10-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
-    <loc>https://ghostchat.onrender.com/#anonymous-chat</loc>
+    <loc>https://ghostchat-frontend-117d.onrender.com/#anonymous-chat</loc>
     <lastmod>2026-10-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
-    <loc>https://ghostchat.onrender.com/#random-chat</loc>
+    <loc>https://ghostchat-frontend-117d.onrender.com/#random-chat</loc>
     <lastmod>2026-10-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://ghostchat.onrender.com/#e2ee-security</loc>
+    <loc>https://ghostchat-frontend-117d.onrender.com/#e2ee-security</loc>
     <lastmod>2026-10-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>

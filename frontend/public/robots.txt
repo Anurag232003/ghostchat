@@ -10,4 +10,4 @@ User-agent: Bingbot
 Allow: /
 
 # Sitemap Location
-Sitemap: https://ghostchat.onrender.com/sitemap.xml
+Sitemap: https://ghostchat-frontend-117d.onrender.com/sitemap.xml
